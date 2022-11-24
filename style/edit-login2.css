@@ -1,0 +1,35 @@
+.box {
+    height: 500px;
+    margin-top: 50px;        
+}
+
+
+input {
+    font-family: sans-serif;
+    margin: 30px auto;
+    display: block;
+    width: 50%;
+    padding: 15px;
+    border: 1px solid gray;
+    transform: translateY(250%);
+}
+
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: gray;
+    transform: translateY(250%);
+}
+
+
+button:hover {
+    background: black;
+    color: white;
+}

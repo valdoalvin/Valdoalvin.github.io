@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Valdoalvin_</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+      <style>
+         .pop-up-log {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100vh;
+            z-index: 11111;
+        }
+
+        .con-log {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            width: 570px;
+            height: 400px;
+            border-radius: 10px;
+        }
+
+        .con-log h3 {
+            position: absolute;
+            top: 150px;
+            text-align: center;
+        }
+
+        .form-log {
+            display: block;
+            text-align: center;
+        }
+
+        .form-log input {
+            display: block;
+            margin-bottom: 26px;
+            width: 250px;
+            height: 45px;
+            position: relative;
+            top: 13px;
+            border: none;
+            background: none;
+            outline: none;
+            border-bottom: 1px solid black;
+        }
+
+        .form-log i {
+            display: block;
+            text-align: left; 
+            position: relative;
+            right: 37px;
+            font-size: 26px;
+            top: 50px;
+        }
+
+        .form-log i,
+        .form-log input {
+            line-height: 10px;
+        }
+
+        button {
+            background: none;
+            outline: none;
+            border: none ;
+            position: relative;
+            top: 30px;
+        }
+
+        .close {
+            position: absolute;
+            right: 680px;
+            top: 275px;
+            color: silver;
+            font-size: 50px;
+            cursor: pointer;
+        }
+
+        .button {
+         position: relative;
+         left: 150px;
+        }
+
+      </style>
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <!-- <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div> -->
+      <!-- end loader -->
+      <div id="mySidepanel" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="index2.html">Home </a>
+         <a href="#about">About</a>
+         <a href="#service">Services  </a>
+         <!-- <a href="#vehicles">Our Vehicles</a>
+         <a href="#testimonial">Testimonial</a> -->
+         <a href="#contact">Contact</a>
+      </div>
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                     <div class="logo">
+                        <a href="index2.html"><h1>Valdoalvin_</h1></a>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                     <div class="right_bottun">
+                        <ul class="conat_info d_none ">
+                           <li><a href="php/tampil-login.php"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                           <li><a href="php/tampil-komen.php"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp;</a></li>
+                        </ul>
+                        <button class="openbtn" onclick="openNav()"><img src="images/menu_icon.png" alt="#"/> </button> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- login -->
+      <section class="banner_main">
+         <div id="banner1" class="carousel slide banner_slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#banner1" data-slide-to="0" class="active"></li>
+               <li data-target="#banner1" data-slide-to="1"></li>
+               <li data-target="#banner1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container-fluid">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-7 col-lg-5">
+                              <div class="text-bg">
+                                 <h1>XI SIJA NEGA</h1>
+                                 <span>Layanan Komputasi Awan</span>
+                                 <!-- <a class="read_more" href="#">Contact Us</a> -->
+                              </div>
+                           </div>
+                           <div class="col-md-12 col-lg-7">
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="ban_track">
+                                       <figure><img src="images/track.png" alt="#"/></figure>
+                                    </div>
+                                 </div>
+                                 <!-- <div class="button">
+                                    <button class="btn btn-primary" id="input">Input Data</button>
+                                 </div> -->
+                                 <div class="col-md-6">
+                                    <!-- <form class="transfot" action="php/simpan.php" method="post">
+                                       <div class="col-md-12">
+                                          <span>Professional Services</span>
+                                          <h3>Input Your Data Here</h3>
+                                       </div>
+                                       <div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="ID" type="text" name="id-input">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Nama Lengkap" type="text" name="nama-input">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Username" type="text" name="user-input">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input class="transfot_form" placeholder="Password" type="password" name="pass-input">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <button class="get_now" onclick="alert('Data Berhasil Disimpan')">Submit</button>
+                                       </div>
+                                    </div>
+                                    </form> -->
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Bio data -->
+      <div id="about" class="about ">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="foto_bio">
+                     <figure><img src="images/FotoKarnafal.png" alt="#" /></figure>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="titlepage">
+                     <h2>TENTANG KAMI</h2>
+                     <p> Saya Rivaldo Alvin Andriansyah,Saya dari XI SIJA , Ini adalah tugas membuat website di layanan komputasi awan menggunakan HTML,CSS,Javascript,PHP 
+                     </p>
+                     <!-- <a class="read_more" href="#">Read More</a> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- our service -->
+      <div id="service" class="service">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="titlepage">
+                     <h2>Pelayanan Kami</h2>
+                     <!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, There </p> -->
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="service_main">
+                     <div class="service_box yell_colo">
+                        <i><img src="images/ser1.png" class="mikrotik" alt="#"/></i>
+                        <h4>menerima layanan setting mikrotik</h4>
+                     </div>
+                     <div class="service_box yelldark_colo">
+                        <i><img src="images/ser3.png" class="linux" alt="#"/></i>
+                        <h4>menerima layanan instalasi linux</h4>
+                     </div>
+                     <div class="service_box yell_colo">
+                        <i><img src="images/ser5.png" alt="#"/></i>
+                        <h4>keamanan jaringan</h4>
+                     </div>
+                     <div class="service_box yelldark_colo">
+                        <i><img src="images/ser4.png" class="windows" alt="#"/></i>
+                        <h4>menerima jasa instalasi windows</h4>
+                     </div>
+                     <div class="service_box yell_colo">
+                        <i><img src="images/ser2.png" class="webhosting" alt="#"/></i>
+                        <h4>menerima layanan web hosting</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <!-- <a class="read_more" href="#">Read More</a> -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- keterangan -->
+      <div class="choose">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Yang Saya Pelajari Sekarang</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-5">
+                  <div class="choose_box">
+                     <i><img src="images/why1.png" alt="#"/></i>
+                     <h3>Data Base</h3>
+                     <p>Database atau basis data adalah kumpulan data yang dikelola sedemikian rupa berdasarkan ketentuan tertentu yang saling berhubungan sehingga mudah dalam pengelolaannya. Melalui pengelolaan tersebut pengguna dapat memperoleh kemudahan dalam mencari informasi, menyimpan informasi dan membuang informasi.</p>
+                     <!-- <a class="read_more" href="#"></a> -->
+                  </div>
+               </div>
+               <div class="col-md-5 offset-md-2">
+                  <div class="choose_box">
+                     <i><img src="images/why2.png" alt="#"/></i>
+                     <h3>Web Server</h3>
+                     <p>Web server adalah sebuah software (perangkat lunak) yang memberikan layanan berupa data. Berfungsi untuk menerima permintaan HTTP atau HTTPS dari klien atau kita kenal dengan web browser (Chrome, Firefox). Selanjutnya ia akan mengirimkan respon atas permintaan tersebut kepada client dalam bentuk halaman web.</p>
+                     <!-- <a class="read_more" href="#"></a> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- comment -->
+      <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage" class="text_komen">
+                     <h2>Masukan Komentar Anda</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="con_bg">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-5">
+                     <form id="request" class="main_form" action="php/simpan-komen.php" method="post">
+                        <div class="row">
+                           <div class="col-md-12 ">
+                              <input class="contactus" placeholder="Name" type="type" name="nma-inp"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="Email" type="type" name="mail-inp"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="Phone Number" type="type" name="phone-inp">                          
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactusmess" placeholder="Message" type="type" name="msage-inp">
+                           </div>
+                           <div class="col-md-12">
+                              <button class="send_btn">Sumbit</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-7">
+                     <div class="co_tru">
+                        <figure><img src="images/truc4.png" alt="#"/></figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact -->
+      <footer>
+         <div class="footer bottom_cross1">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <ul class="location_icon">
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Address : Jl.Ahmad Yani <br> Pagelaran, Kab Malang 
+                        </li>
+                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>Phone :  +6285161259354 </li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>Email : rivaldoalvin001@gmail.com</li>
+                     </ul>
+                     <form class="bottom_form" action="php/simpan-subs.php" method="post">
+                        <h3>Newsletter</h3>
+                        <input class="enter" placeholder="Masukkan email Anda" type="text" name="subs-inp">
+                        <button class="sub_btn" style="position: relative; top: 0px;">subscribe</button>
+                     </form>
+                  </div>
+                  <div class="col-md-8">
+                     <div class="map">
+                        <figure><img src="images/map.png" alt="#"/></figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2022 All Rights Reserved. Design by<a href=""> Valdoalvin_</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         function openNav() {
+           document.getElementById("mySidepanel").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidepanel").style.width = "0";
+         }
+
+         document.querySelector(".close").addEventListener("click", function(){
+                document.querySelector(".pop-up-log").style.display = "none" ;
+            })
+
+        document.getElementById("input").addEventListener("click", function(){
+                document.querySelector(".pop-up-log").style.display = "flex" ;
+            })
+      </script>
+   </body>
+</html>
